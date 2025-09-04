@@ -1,0 +1,515 @@
+{
+  "job_metadata": {
+    "job_id": "batch_20250904_125811",
+    "total_urls": 5,
+    "processed_count": 5,
+    "success_count": 5,
+    "failure_count": 0,
+    "completion_percentage": 100.0,
+    "start_time": "2025-09-04T12:58:11.381456",
+    "last_save_time": "2025-09-04T12:58:29.487633",
+    "configuration": {
+      "max_workers": 2,
+      "delay_per_domain": 1.5,
+      "analyze_robots": true
+    }
+  },
+  "results": [
+    {
+      "url": "https://www.python.org/about/",
+      "success": true,
+      "timestamp": "2025-09-04T12:58:11.383925",
+      "status_code": 200,
+      "response_size": 43804,
+      "response_time": 0.08908390998840332,
+      "robots_allowed": true,
+      "crawl_delay": null,
+      "robots_analysis": {
+        "url": "https://www.python.org/about/",
+        "raw_content": "# Directions for robots.  See this URL:\n# http://www.robotstxt.org/robotstxt.html\n# for a description of the file format.\n\nUser-agent: HTTrack\nUser-agent: puf\nUser-agent: MSIECrawler\nDisallow: /\n\n# The Krugle web crawler (though based on Nutch) is OK.\nUser-agent: Krugle\nAllow: /\nDisallow: /~guido/orlijn/\nDisallow: /webstats/\n\n# No one should be crawling us with Nutch.\nUser-agent: Nutch\nDisallow: /\n\n# Hide old versions of the documentation and various large sets of files.\nUser-agent: *\nDisallow: /~guido/orlijn/\nDisallow: /webstats/\n",
+        "user_agents": {
+          "HTTrack": {
+            "user_agent": "HTTrack",
+            "allow_patterns": [],
+            "disallow_patterns": [],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          },
+          "puf": {
+            "user_agent": "puf",
+            "allow_patterns": [],
+            "disallow_patterns": [],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          },
+          "MSIECrawler": {
+            "user_agent": "MSIECrawler",
+            "allow_patterns": [],
+            "disallow_patterns": [
+              "/"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          },
+          "Krugle": {
+            "user_agent": "Krugle",
+            "allow_patterns": [
+              "/"
+            ],
+            "disallow_patterns": [
+              "/~guido/orlijn/",
+              "/webstats/"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          },
+          "Nutch": {
+            "user_agent": "Nutch",
+            "allow_patterns": [],
+            "disallow_patterns": [
+              "/"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          },
+          "*": {
+            "user_agent": "*",
+            "allow_patterns": [],
+            "disallow_patterns": [
+              "/~guido/orlijn/",
+              "/webstats/"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          }
+        },
+        "sitemaps": [],
+        "invalid_sitemaps": [],
+        "comments": [
+          "Directions for robots.  See this URL:",
+          "http://www.robotstxt.org/robotstxt.html",
+          "for a description of the file format.",
+          "The Krugle web crawler (though based on Nutch) is OK.",
+          "No one should be crawling us with Nutch.",
+          "Hide old versions of the documentation and various large sets of files."
+        ],
+        "unknown_directives": [],
+        "statistics": {
+          "total_user_agents": 6,
+          "total_sitemaps": 0,
+          "total_comments": 6,
+          "total_errors": 0,
+          "unknown_directives": 0,
+          "total_allow_rules": 1,
+          "total_disallow_rules": 6,
+          "avg_allow_rules_per_ua": 0.16666666666666666,
+          "avg_disallow_rules_per_ua": 1.0,
+          "user_agents_with_crawl_delay": 0,
+          "min_crawl_delay": null,
+          "max_crawl_delay": null,
+          "avg_crawl_delay": null,
+          "most_common_patterns": [
+            [
+              "/",
+              3
+            ],
+            [
+              "/~guido/orlijn/",
+              2
+            ],
+            [
+              "/webstats/",
+              2
+            ]
+          ],
+          "unique_patterns": 3,
+          "special_user_agents": [
+            "*"
+          ]
+        },
+        "file_size": 537,
+        "line_count": 23,
+        "is_valid": true,
+        "errors": []
+      },
+      "error_type": null,
+      "error_message": null,
+      "domain": "www.python.org",
+      "processed_by_thread": "ThreadPoolExecutor-0_1"
+    },
+    {
+      "url": "https://docs.python.org/3/",
+      "success": true,
+      "timestamp": "2025-09-04T12:58:11.653997",
+      "status_code": 200,
+      "response_size": 17874,
+      "response_time": 0.08776307106018066,
+      "robots_allowed": true,
+      "crawl_delay": null,
+      "robots_analysis": {
+        "url": "https://docs.python.org/3/",
+        "raw_content": "Sitemap: https://docs.python.org/sitemap.xml\n\n# Prevent development and old documentation from showing up in search results.\nUser-agent: *\nDisallow: /dev\nDisallow: /release\n\n# Disallow EOL versions\nDisallow: /2/\nDisallow: /2.0/\nDisallow: /2.1/\nDisallow: /2.2/\nDisallow: /2.3/\nDisallow: /2.4/\nDisallow: /2.5/\nDisallow: /2.6/\nDisallow: /2.7/\nDisallow: /3.0/\nDisallow: /3.1/\nDisallow: /3.2/\nDisallow: /3.3/\nDisallow: /3.4/\nDisallow: /3.5/\nDisallow: /3.6/\nDisallow: /3.7/\nDisallow: /3.8/\n",
+        "user_agents": {
+          "*": {
+            "user_agent": "*",
+            "allow_patterns": [],
+            "disallow_patterns": [
+              "/dev",
+              "/release",
+              "/2/",
+              "/2.0/",
+              "/2.1/",
+              "/2.2/",
+              "/2.3/",
+              "/2.4/",
+              "/2.5/",
+              "/2.6/",
+              "/2.7/",
+              "/3.0/",
+              "/3.1/",
+              "/3.2/",
+              "/3.3/",
+              "/3.4/",
+              "/3.5/",
+              "/3.6/",
+              "/3.7/",
+              "/3.8/"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          }
+        },
+        "sitemaps": [
+          "https://docs.python.org/sitemap.xml"
+        ],
+        "invalid_sitemaps": [],
+        "comments": [
+          "Prevent development and old documentation from showing up in search results.",
+          "Disallow EOL versions"
+        ],
+        "unknown_directives": [],
+        "statistics": {
+          "total_user_agents": 1,
+          "total_sitemaps": 1,
+          "total_comments": 2,
+          "total_errors": 0,
+          "unknown_directives": 0,
+          "total_allow_rules": 0,
+          "total_disallow_rules": 20,
+          "avg_allow_rules_per_ua": 0.0,
+          "avg_disallow_rules_per_ua": 20.0,
+          "user_agents_with_crawl_delay": 0,
+          "min_crawl_delay": null,
+          "max_crawl_delay": null,
+          "avg_crawl_delay": null,
+          "most_common_patterns": [
+            [
+              "/dev",
+              1
+            ],
+            [
+              "/release",
+              1
+            ],
+            [
+              "/2/",
+              1
+            ],
+            [
+              "/2.0/",
+              1
+            ],
+            [
+              "/2.1/",
+              1
+            ],
+            [
+              "/2.2/",
+              1
+            ],
+            [
+              "/2.3/",
+              1
+            ],
+            [
+              "/2.4/",
+              1
+            ],
+            [
+              "/2.5/",
+              1
+            ],
+            [
+              "/2.6/",
+              1
+            ]
+          ],
+          "unique_patterns": 20,
+          "special_user_agents": [
+            "*"
+          ]
+        },
+        "file_size": 484,
+        "line_count": 26,
+        "is_valid": true,
+        "errors": []
+      },
+      "error_type": null,
+      "error_message": null,
+      "domain": "docs.python.org",
+      "processed_by_thread": "ThreadPoolExecutor-0_1"
+    },
+    {
+      "url": "https://github.com/python",
+      "success": true,
+      "timestamp": "2025-09-04T12:58:12.157403",
+      "status_code": 200,
+      "response_size": 297150,
+      "response_time": 0.6007881164550781,
+      "robots_allowed": true,
+      "crawl_delay": null,
+      "robots_analysis": {
+        "url": "https://github.com/python",
+        "raw_content": "# If you would like to crawl GitHub contact us via https://support.github.com?tags=dotcom-robots\n# We also provide an extensive API: https://docs.github.com\nUser-agent: baidu\ncrawl-delay: 1\n\n\nUser-agent: *\n\nDisallow: /*/*/pulse\nDisallow: /*/*/projects\nDisallow: /*/*/forks\nDisallow: /*/*/issues/new\nDisallow: /*/*/milestones/new\nDisallow: /*/*/issues/search\nDisallow: /*/*/commits/\nDisallow: /*/*/branches\nDisallow: /*/*/contributors\nDisallow: /*/*/tags\nDisallow: /*/*/stargazers\nDisallow: /*/*/watchers\nDisallow: /*/*/network\nDisallow: /*/*/graphs\nDisallow: /*/*/compare\n\nDisallow: /*/tree/\nDisallow: /gist/\nDisallow: /*/download\nDisallow: /*/revisions\nDisallow: /*/commits/*?author\nDisallow: /*/commits/*?path\nDisallow: /*/comments\nDisallow: /*/archive/\nDisallow: /*/blame/\nDisallow: /*/raw/\nDisallow: /*/cache/\nDisallow: /.git/\nDisallow: */.git/\nDisallow: /*.git$\nDisallow: /search/advanced\nDisallow: /search$\nDisallow: /*q=\nDisallow: /*.atom$\n\nDisallow: /ekansa/Open-Context-Data\nDisallow: /ekansa/opencontext-*\nDisallow: */tarball/\nDisallow: */zipball/\n\nDisallow: /*source=*\nDisallow: /*ref_cta=*\nDisallow: /*plan=*\nDisallow: /*return_to=*\nDisallow: /*ref_loc=*\nDisallow: /*setup_organization=*\nDisallow: /*source_repo=*\nDisallow: /*ref_page=*\nDisallow: /*source=*\nDisallow: /*referrer=*\nDisallow: /*report=*\nDisallow: /*author=*\nDisallow: /*since=*\nDisallow: /*until=*\nDisallow: /*commits?author=*\nDisallow: /*report-abuse?report=*\nDisallow: /*tab=*\nAllow: /*?tab=achievements&achievement=*\n\nDisallow: /account-login\nDisallow: /Explodingstuff/\n\n",
+        "user_agents": {
+          "baidu": {
+            "user_agent": "baidu",
+            "allow_patterns": [],
+            "disallow_patterns": [],
+            "crawl_delay": 1.0,
+            "request_rate": null,
+            "visit_time": null
+          },
+          "*": {
+            "user_agent": "*",
+            "allow_patterns": [
+              "/*?tab=achievements&achievement=*"
+            ],
+            "disallow_patterns": [
+              "/*/*/pulse",
+              "/*/*/projects",
+              "/*/*/forks",
+              "/*/*/issues/new",
+              "/*/*/milestones/new",
+              "/*/*/issues/search",
+              "/*/*/commits/",
+              "/*/*/branches",
+              "/*/*/contributors",
+              "/*/*/tags",
+              "/*/*/stargazers",
+              "/*/*/watchers",
+              "/*/*/network",
+              "/*/*/graphs",
+              "/*/*/compare",
+              "/*/tree/",
+              "/gist/",
+              "/*/download",
+              "/*/revisions",
+              "/*/commits/*?author",
+              "/*/commits/*?path",
+              "/*/comments",
+              "/*/archive/",
+              "/*/blame/",
+              "/*/raw/",
+              "/*/cache/",
+              "/.git/",
+              "*/.git/",
+              "/*.git$",
+              "/search/advanced",
+              "/search$",
+              "/*q=",
+              "/*.atom$",
+              "/ekansa/Open-Context-Data",
+              "/ekansa/opencontext-*",
+              "*/tarball/",
+              "*/zipball/",
+              "/*source=*",
+              "/*ref_cta=*",
+              "/*plan=*",
+              "/*return_to=*",
+              "/*ref_loc=*",
+              "/*setup_organization=*",
+              "/*source_repo=*",
+              "/*ref_page=*",
+              "/*source=*",
+              "/*referrer=*",
+              "/*report=*",
+              "/*author=*",
+              "/*since=*",
+              "/*until=*",
+              "/*commits?author=*",
+              "/*report-abuse?report=*",
+              "/*tab=*",
+              "/account-login",
+              "/Explodingstuff/"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          }
+        },
+        "sitemaps": [],
+        "invalid_sitemaps": [],
+        "comments": [
+          "If you would like to crawl GitHub contact us via https://support.github.com?tags=dotcom-robots",
+          "We also provide an extensive API: https://docs.github.com"
+        ],
+        "unknown_directives": [],
+        "statistics": {
+          "total_user_agents": 2,
+          "total_sitemaps": 0,
+          "total_comments": 2,
+          "total_errors": 0,
+          "unknown_directives": 0,
+          "total_allow_rules": 1,
+          "total_disallow_rules": 56,
+          "avg_allow_rules_per_ua": 0.5,
+          "avg_disallow_rules_per_ua": 28.0,
+          "user_agents_with_crawl_delay": 1,
+          "min_crawl_delay": 1.0,
+          "max_crawl_delay": 1.0,
+          "avg_crawl_delay": 1.0,
+          "most_common_patterns": [
+            [
+              "/*source=*",
+              2
+            ],
+            [
+              "/*?tab=achievements&achievement=*",
+              1
+            ],
+            [
+              "/*/*/pulse",
+              1
+            ],
+            [
+              "/*/*/projects",
+              1
+            ],
+            [
+              "/*/*/forks",
+              1
+            ],
+            [
+              "/*/*/issues/new",
+              1
+            ],
+            [
+              "/*/*/milestones/new",
+              1
+            ],
+            [
+              "/*/*/issues/search",
+              1
+            ],
+            [
+              "/*/*/commits/",
+              1
+            ],
+            [
+              "/*/*/branches",
+              1
+            ]
+          ],
+          "unique_patterns": 56,
+          "special_user_agents": [
+            "*"
+          ]
+        },
+        "file_size": 1551,
+        "line_count": 70,
+        "is_valid": true,
+        "errors": []
+      },
+      "error_type": null,
+      "error_message": null,
+      "domain": "github.com",
+      "processed_by_thread": "ThreadPoolExecutor-0_1"
+    },
+    {
+      "url": "https://stackoverflow.com/questions",
+      "success": true,
+      "timestamp": "2025-09-04T12:58:13.239279",
+      "status_code": 200,
+      "response_size": 209936,
+      "response_time": 0.40839290618896484,
+      "robots_allowed": true,
+      "crawl_delay": null,
+      "robots_analysis": null,
+      "error_type": null,
+      "error_message": null,
+      "domain": "stackoverflow.com",
+      "processed_by_thread": "ThreadPoolExecutor-0_1"
+    },
+    {
+      "url": "https://httpbin.org/get",
+      "success": true,
+      "timestamp": "2025-09-04T12:58:11.383223",
+      "status_code": 200,
+      "response_size": 325,
+      "response_time": 1.1962411403656006,
+      "robots_allowed": true,
+      "crawl_delay": null,
+      "robots_analysis": {
+        "url": "https://httpbin.org/get",
+        "raw_content": "User-agent: *\nDisallow: /deny\n",
+        "user_agents": {
+          "*": {
+            "user_agent": "*",
+            "allow_patterns": [],
+            "disallow_patterns": [
+              "/deny"
+            ],
+            "crawl_delay": null,
+            "request_rate": null,
+            "visit_time": null
+          }
+        },
+        "sitemaps": [],
+        "invalid_sitemaps": [],
+        "comments": [],
+        "unknown_directives": [],
+        "statistics": {
+          "total_user_agents": 1,
+          "total_sitemaps": 0,
+          "total_comments": 0,
+          "total_errors": 0,
+          "unknown_directives": 0,
+          "total_allow_rules": 0,
+          "total_disallow_rules": 1,
+          "avg_allow_rules_per_ua": 0.0,
+          "avg_disallow_rules_per_ua": 1.0,
+          "user_agents_with_crawl_delay": 0,
+          "min_crawl_delay": null,
+          "max_crawl_delay": null,
+          "avg_crawl_delay": null,
+          "most_common_patterns": [
+            [
+              "/deny",
+              1
+            ]
+          ],
+          "unique_patterns": 1,
+          "special_user_agents": [
+            "*"
+          ]
+        },
+        "file_size": 30,
+        "line_count": 2,
+        "is_valid": true,
+        "errors": []
+      },
+      "error_type": null,
+      "error_message": null,
+      "domain": "httpbin.org",
+      "processed_by_thread": "ThreadPoolExecutor-0_0"
+    }
+  ]
+}

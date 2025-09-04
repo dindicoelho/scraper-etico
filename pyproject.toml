@@ -1,0 +1,108 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scraper-etico"
+version = "1.0.0"
+description = "Uma biblioteca Python para web scraping ético que respeita robots.txt automaticamente"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Monitor Preços Públicos", email = "contato@example.com"}
+]
+maintainers = [
+    {name = "Monitor Preços Públicos", email = "contato@example.com"}
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Natural Language :: Portuguese (Brazilian)",
+]
+keywords = [
+    "web-scraping", "robots.txt", "ethical-scraping", "rate-limiting",
+    "web-crawler", "data-extraction", "compliance", "automation"
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+analysis = ["pandas>=1.0.0", "matplotlib>=3.0.0"]
+progress = ["tqdm>=4.0.0"]
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.0.0", 
+    "jupyter>=1.0.0",
+]
+all = [
+    "pandas>=1.0.0",
+    "matplotlib>=3.0.0", 
+    "tqdm>=4.0.0",
+    "jupyter>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/example/scraper-etico"
+Repository = "https://github.com/example/scraper-etico.git"
+Documentation = "https://github.com/example/scraper-etico/blob/main/README.md"
+"Bug Tracker" = "https://github.com/example/scraper-etico/issues"
+Tutorial = "https://github.com/example/scraper-etico/blob/main/notebooks/tutorial_scraper_etico.ipynb"
+
+[project.scripts]
+scraper-etico = "src.scraper_etico:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+"*" = ["README.md", "requirements.txt", "notebooks/*.ipynb", "examples/*.py"]
+
+# Configurações para pytest
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+
+# Configurações para coverage
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "setup.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
