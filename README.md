@@ -36,11 +36,49 @@ python3 -m pip install -r requirements.txt
 cp production_config.example.py production_config.py
 nano production_config.py  # Edit with your data
 
-# Test installation
+# Test installation - run this file:
 python3 example_usage.py
 ```
 
-## 📖 Basic Usage
+## 🚀 **What Files Can You Run?**
+
+### 🧪 **For Testing/Learning:**
+```bash
+# 1. Test basic functionality:
+python3 example_usage.py
+
+# 2. Run interactive tutorial:
+python3 -m jupyter notebook notebooks/ethical_scraper_tutorial.ipynb
+
+# 3. Custom scraping with your own URLs:
+python3 custom_scraping.py
+```
+
+### 🏭 **For Production:**
+```bash
+# 1. Configure your sites first:
+cp production_config.example.py production_config.py
+nano production_config.py  # Add your real sites and settings
+
+# 2. Run production scraping:
+python3 run_production.py
+
+# 3. Analyze results:
+python3 analyze_results.py
+```
+
+### 🧪 **For Testing:**
+```bash
+# Run all tests:
+python3 tests/run_tests.py
+
+# Test with your specific sites:
+python3 tests/examples/my_monitoring.py
+```
+
+---
+
+## 📖 Basic Usage (Code Examples)
 
 ### Simple URL Verification
 
@@ -107,22 +145,53 @@ python3 -m jupyter notebook ethical_scraper_tutorial.ipynb
 
 ## 🏗️ System Architecture
 
-### Directory Structure
+### 📁 Project Structure & Executable Files
+
 ```
-ethical_scraper/
-├── src/                          # Main source code
-│   ├── scraper_etico.py         # Main scraping class
-│   ├── analyzer.py              # Advanced robots.txt analysis
-│   ├── batch_processor.py       # Concurrent batch processing
-│   └── utils.py                 # Utility functions
-├── tests/                       # Automated tests
-├── notebooks/                   # Interactive tutorials
-├── production_data/             # Execution results
-├── data_backup/                 # Automatic backup
-├── logs/                        # Execution logs
-├── batch_states/               # Job states for resumption
-├── production_config.example.py # Configuration example
-└── requirements.txt            # Dependencies
+scraper_etico/
+├── 🟢 EXECUTABLE FILES (run these):
+│   ├── example_usage.py           # 👉 python3 example_usage.py
+│   ├── custom_scraping.py         # 👉 python3 custom_scraping.py  
+│   ├── run_production.py          # 👉 python3 run_production.py
+│   ├── analyze_results.py         # 👉 python3 analyze_results.py
+│   │
+├── 🔧 CONFIGURATION FILES (edit these):
+│   ├── production_config.example.py  # Copy to production_config.py
+│   ├── requirements.txt              # Dependencies list
+│   │
+├── 📚 TUTORIAL & TESTS:
+│   ├── notebooks/ethical_scraper_tutorial.ipynb  # 👉 jupyter notebook
+│   ├── tests/run_tests.py                       # 👉 python3 tests/run_tests.py
+│   ├── tests/production_test.py                 # 👉 python3 tests/production_test.py
+│   └── tests/examples/my_monitoring.py          # 👉 python3 tests/examples/my_monitoring.py
+│   │
+├── 📦 LIBRARY CODE (don't edit):
+│   ├── src/scraper_etico.py       # Main scraping class
+│   ├── src/analyzer.py            # Robots.txt analysis
+│   ├── src/batch_processor.py     # Batch processing
+│   └── src/utils.py               # Utility functions
+│   │
+└── 📊 RESULTS FOLDERS:
+    ├── production_data/           # Your scraping results
+    ├── data_backup/               # Automatic backups
+    ├── logs/                      # Execution logs
+    └── batch_states/              # Job resumption data
+```
+
+### 🚀 **Quick Command Reference:**
+```bash
+# 🧪 Testing & Learning:
+python3 example_usage.py                    # Test basic functionality
+python3 custom_scraping.py                  # Custom URL scraping
+python3 -m jupyter notebook notebooks/ethical_scraper_tutorial.ipynb
+
+# 🏭 Production:
+python3 run_production.py                   # Main production script
+python3 analyze_results.py                  # Analyze results
+
+# 🧪 Testing:
+python3 tests/run_tests.py                  # Run all tests
+python3 tests/production_test.py            # Test production config
 ```
 
 ### Main Components
@@ -260,25 +329,28 @@ The system maintains persistent state using `.pkl` files in `batch_states/`:
 
 ## 🧪 Testing
 
+### **Run These Files to Test:**
 ```bash
-# Run all tests
+# 1. Run all automated tests:
 python3 tests/run_tests.py
 
-# Complete production test
+# 2. Test production configuration:
 python3 tests/production_test.py
 
-# Test your specific sites
+# 3. Test with your specific sites (edit this file first):
 python3 tests/examples/my_monitoring.py
 ```
 
 ## 📊 Data Analysis
 
+### **Run This File to Analyze Results:**
 ```bash
-# Automatically analyze results
+# 1. Automatic analysis of all results:
 python3 analyze_results.py
 
-# View data in Excel/Sheets
+# 2. Open results in Excel/Google Sheets:
 open production_data/monitoring_*.csv
+# OR on Linux: xdg-open production_data/monitoring_*.csv
 ```
 
 ## 🛡️ Ethical Principles
