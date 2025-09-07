@@ -22,8 +22,8 @@ A Python library for **ethical web scraping** that automatically respects robots
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USER/ethical-scraper.git
-cd ethical-scraper
+git clone https://github.com/dindicoelho/scraper-etico.git
+cd scraper-etico
 
 # Install dependencies
 pip install -r requirements.txt
@@ -322,7 +322,7 @@ This tool was developed for **ethical and educational use**. Users are responsib
 - 📖 **Documentation**: See notebooks/ and README.md
 - 🐛 **Issues**: Open an issue on GitHub  
 - 💬 **Discussions**: Use GitHub Discussions
-- 📧 **Contact**: [Open Issue](https://github.com/YOUR-USER/ethical-scraper/issues)
+- 📧 **Contact**: [Open Issue](https://github.com/dindicoelho/scraper-etico/issues)
 
 ---
 

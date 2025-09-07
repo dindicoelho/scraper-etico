@@ -57,11 +57,11 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/example/ethical-scraper"
-Repository = "https://github.com/example/ethical-scraper.git"
-Documentation = "https://github.com/example/ethical-scraper/blob/main/README.md"
-"Bug Tracker" = "https://github.com/example/ethical-scraper/issues"
-Tutorial = "https://github.com/example/ethical-scraper/blob/main/notebooks/ethical_scraper_tutorial.ipynb"
+Homepage = "https://github.com/dindicoelho/scraper-etico"
+Repository = "https://github.com/dindicoelho/scraper-etico.git"
+Documentation = "https://github.com/dindicoelho/scraper-etico/blob/main/README.md"
+"Bug Tracker" = "https://github.com/dindicoelho/scraper-etico/issues"
+Tutorial = "https://github.com/dindicoelho/scraper-etico/blob/main/notebooks/ethical_scraper_tutorial.ipynb"
 
 [project.scripts]
 ethical-scraper = "src.scraper_etico:main"
