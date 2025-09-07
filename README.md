@@ -25,8 +25,12 @@ A Python library for **ethical web scraping** that automatically respects robots
 git clone https://github.com/dindicoelho/scraper-etico.git
 cd scraper-etico
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (choose one option)
+pip3 install -r requirements.txt
+# OR if pip3 not found:
+python3 -m pip install -r requirements.txt
+# OR using conda:
+# conda install requests
 
 # Configure your credentials
 cp production_config.example.py production_config.py
@@ -90,8 +94,13 @@ processor.export_to_json(job_state, "results.json")
 Run the interactive tutorial notebook:
 
 ```bash
+# First install jupyter (if not already installed)
+pip3 install jupyter
+# OR: python3 -m pip install jupyter
+
+# Then run the tutorial
 cd notebooks/
-jupyter notebook tutorial_scraper_etico.ipynb
+jupyter notebook ethical_scraper_tutorial.ipynb
 ```
 
 ## 🏗️ System Architecture
@@ -308,6 +317,39 @@ This library strictly follows **web scraping ethical best practices**:
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) for details.
+
+## 🔧 Troubleshooting
+
+### Common Installation Issues
+
+**Issue**: `pip: command not found` or `pip3: command not found`
+**Solution**: Use Python module syntax:
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+**Issue**: `jupyter: command not found`
+**Solution**: Install Jupyter first:
+```bash
+python3 -m pip install jupyter
+# Then run the notebook
+jupyter notebook notebooks/ethical_scraper_tutorial.ipynb
+```
+
+**Issue**: `ModuleNotFoundError: No module named 'requests'`
+**Solution**: Install requirements properly:
+```bash
+cd scraper_etico
+python3 -m pip install -r requirements.txt
+```
+
+**Issue**: Permission errors on macOS/Linux
+**Solution**: Use virtual environment (recommended):
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m pip install -r requirements.txt
+```
 
 ## ⚠️ Disclaimer
 
