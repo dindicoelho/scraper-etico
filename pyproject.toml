@@ -61,7 +61,7 @@ Homepage = "https://github.com/example/ethical-scraper"
 Repository = "https://github.com/example/ethical-scraper.git"
 Documentation = "https://github.com/example/ethical-scraper/blob/main/README.md"
 "Bug Tracker" = "https://github.com/example/ethical-scraper/issues"
-Tutorial = "https://github.com/example/ethical-scraper/blob/main/notebooks/tutorial_scraper_etico.ipynb"
+Tutorial = "https://github.com/example/ethical-scraper/blob/main/notebooks/ethical_scraper_tutorial.ipynb"
 
 [project.scripts]
 ethical-scraper = "src.scraper_etico:main"
