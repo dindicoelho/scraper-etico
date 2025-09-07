@@ -3,16 +3,16 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "scraper-etico"
+name = "ethical-scraper"
 version = "1.0.0"
-description = "Uma biblioteca Python para web scraping ético que respeita robots.txt automaticamente"
+description = "A Python library for ethical web scraping that automatically respects robots.txt"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Monitor Preços Públicos", email = "contato@example.com"}
+    {name = "Public Price Monitor", email = "contact@example.com"}
 ]
 maintainers = [
-    {name = "Monitor Preços Públicos", email = "contato@example.com"}
+    {name = "Public Price Monitor", email = "contact@example.com"}
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -30,7 +30,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Operating System :: OS Independent",
     "Environment :: Console",
-    "Natural Language :: Portuguese (Brazilian)",
+    "Natural Language :: English",
 ]
 keywords = [
     "web-scraping", "robots.txt", "ethical-scraping", "rate-limiting",
@@ -57,14 +57,14 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/example/scraper-etico"
-Repository = "https://github.com/example/scraper-etico.git"
-Documentation = "https://github.com/example/scraper-etico/blob/main/README.md"
-"Bug Tracker" = "https://github.com/example/scraper-etico/issues"
-Tutorial = "https://github.com/example/scraper-etico/blob/main/notebooks/tutorial_scraper_etico.ipynb"
+Homepage = "https://github.com/example/ethical-scraper"
+Repository = "https://github.com/example/ethical-scraper.git"
+Documentation = "https://github.com/example/ethical-scraper/blob/main/README.md"
+"Bug Tracker" = "https://github.com/example/ethical-scraper/issues"
+Tutorial = "https://github.com/example/ethical-scraper/blob/main/notebooks/tutorial_scraper_etico.ipynb"
 
 [project.scripts]
-scraper-etico = "src.scraper_etico:main"
+ethical-scraper = "src.scraper_etico:main"
 
 [tool.setuptools]
 package-dir = {"" = "."}
@@ -76,7 +76,7 @@ include = ["src*"]
 [tool.setuptools.package-data]
 "*" = ["README.md", "requirements.txt", "notebooks/*.ipynb", "examples/*.py"]
 
-# Configurações para pytest
+# Configuration for pytest
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
@@ -84,7 +84,7 @@ python_classes = "Test*"
 python_functions = "test_*"
 addopts = "-v --tb=short"
 
-# Configurações para coverage
+# Configuration for coverage
 [tool.coverage.run]
 source = ["src"]
 omit = [

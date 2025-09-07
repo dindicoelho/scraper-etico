@@ -1,19 +1,22 @@
-# ScraperÉtico - .gitignore
-# Arquivo para ignorar dados sensíveis no GitHub
+# EthicalScraper - .gitignore
+# File to ignore sensitive data on GitHub
 
-# Dados de produção (NUNCA committar!)
-dados_producao/
-backup_dados/
-resultados_personalizados/
+# ⚠️ CRITICAL: Production configuration file (contains sensitive data!)
+production_config.py
+
+# Production data (NEVER commit!)
+production_data/
+data_backup/
+custom_results/
 logs/
 batch_states/
 
-# Arquivos de configuração com dados pessoais
-config_producao_pessoal.py
-meus_sites_pessoais.py
+# Personal configuration files
+production_config_personal.py
+my_personal_sites.py
 
-# Arquivos temporários de teste
-teste_exports/
+# Temporary test files
+test_exports/
 *.tmp
 *.temp
 
@@ -101,7 +104,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-teste_env/
+test_env/
 
 # Spyder project settings
 .spyderproject
@@ -171,24 +174,24 @@ $RECYCLE.BIN/
 .Trash-*
 .nfs*
 
-# Logs específicos do projeto
+# Project-specific logs
 *.log
 *_log.txt
 
-# Certificados e chaves (se houver)
+# Certificates and keys (if any)
 *.pem
 *.key
 *.crt
 *.p12
 *.pfx
 
-# Arquivos de backup
+# Backup files
 *.backup
 *.bak
 *.old
 *.orig
 
-# Dados pessoais ou sensíveis
-*_pessoal.*
-*_privado.*
-*_secreto.*
+# Personal or sensitive data
+*_personal.*
+*_private.*
+*_secret.*
