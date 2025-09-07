@@ -98,9 +98,11 @@ Run the interactive tutorial notebook:
 pip3 install jupyter
 # OR: python3 -m pip install jupyter
 
-# Then run the tutorial
+# Then run the tutorial (choose one option)
 cd notebooks/
 jupyter notebook ethical_scraper_tutorial.ipynb
+# OR if jupyter command not found:
+python3 -m jupyter notebook ethical_scraper_tutorial.ipynb
 ```
 
 ## 🏗️ System Architecture
@@ -329,11 +331,12 @@ python3 -m pip install -r requirements.txt
 ```
 
 **Issue**: `jupyter: command not found`
-**Solution**: Install Jupyter first:
+**Solution**: Use Python module syntax:
 ```bash
+# Install jupyter if needed
 python3 -m pip install jupyter
-# Then run the notebook
-jupyter notebook notebooks/ethical_scraper_tutorial.ipynb
+# Then run via python3 -m
+python3 -m jupyter notebook notebooks/ethical_scraper_tutorial.ipynb
 ```
 
 **Issue**: `ModuleNotFoundError: No module named 'requests'`
